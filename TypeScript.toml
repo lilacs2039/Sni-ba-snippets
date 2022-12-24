@@ -24,7 +24,8 @@ tags = "ファイル,フォルダ,書,読,待つ,検索"
 # color="#ccc"
 
 
-["WEBからファイル取得して文字列を処理"]
+[[snippets]]
+title = "WEBからファイル取得して文字列を処理"
 icon = "unknown"
 description = """
 WEBからファイル取得して文字列を処理
@@ -37,7 +38,8 @@ fetch(_{url}_)
     });
 """
 
-["tomlファイルを解析"]
+[[snippets]]
+title = "tomlファイルを解析"
 icon = "unknown"
 description = """
 tomlファイルを解析
@@ -50,7 +52,8 @@ try {
 } catch (e) { console.error(`Parse error on ${tomlPath}. ${e}`); }
 """
 
-["reactiveな配列の定義"]
+[[snippets]]
+title = "reactiveな配列の定義"
 icon = "unknown"
 description = """
 reactiveな配列の定義 #vue
@@ -63,7 +66,8 @@ var _{変数名}_ = reactive([
 ]);
 """
 
-["[vue]v-forとv-ifでinput/div混合したブロックを作成"]
+[[snippets]]
+title = "[vue]v-forとv-ifでinput/div混合したブロックを作成"
 icon = "unknown"
 description = """
 v-forとv-ifディレクティブでinput/div混合したブロックを作成　#vue
@@ -85,7 +89,8 @@ code = """
 
 
 
-["[vue]v-forディレクティブの例：ボタンをたくさん作成"]
+[[snippets]]
+title = "[vue]v-forディレクティブの例：ボタンをたくさん作成"
 icon = "unknown"
 description = """
 v-forでボタンをたくさん作成 #vue
@@ -103,7 +108,8 @@ v-bind:key="index"
 </button>
 """
 
-["[vue+TS]マークダウンをhtmlに変換"]
+[[snippets]]
+title = "[vue+TS]マークダウンをhtmlに変換"
 icon = "unknown"
 description = """
 リポジトリ　https://github.com/markedjs/marked
@@ -133,7 +139,8 @@ function md2html(mdstr:string) {
 """
 
 
-["[TS]foreach (for ... of ...)"]
+[[snippets]]
+title = "[TS]foreach (for ... of ...)"
 icon = "unknown"
 description = """
 Pythonのようなfor in ではなく、for ofを使う。

@@ -9,7 +9,8 @@ name = "操作"
 tags = "移動,コピー,開く,作成,変更,削除"
 
 
-["[html]FlexBox"]
+[[snippets]]
+title = "[html]FlexBox"
 icon = "list-view"
 description = """
 ●　使い方（※クラス名がflex_boxの場合）
@@ -26,7 +27,8 @@ code = """
 }
 """
 
-["[vue]リンク先を動的に指定"]
+[[snippets]]
+title = "[vue]リンク先を動的に指定"
 icon = "unknown"
 description = """
 :href=　でプロパティを動的に指定できる。

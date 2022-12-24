@@ -15,7 +15,8 @@ name = "その他"
 tags = "待つ,検索,文字,変数,サブルーチン,コメント,画面,通信"
 description = ""
 
-["サブルーチン"]
+[[snippets]]
+title = "サブルーチン"
 icon = "code"
 description = """
 サブルーチンのテンプレート
@@ -28,7 +29,8 @@ exit /b
 
 
 
-["ファイルが存在すれば削除"]
+[[snippets]]
+title = "ファイルが存在すれば削除"
 icon = "empty-trash"
 description = """
 ファイルが存在するか確認して、存在すれば削除する。
@@ -38,16 +40,5 @@ set DEL_FILE=_{削除するファイル名}_
 if exist %DEL_FILE% ( del %DEL_FILE% )
 """
 
-
-# ["サブルーチン"]
-# icon = "code"
-# description = """
-# サブルーチンのテンプレート
-# """
-# code = """
-# :_{label}_
-# _[サブルーチン処理]_
-# exit /b
-# """
 
 

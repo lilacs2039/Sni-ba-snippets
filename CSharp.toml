@@ -8,7 +8,8 @@ name = "その他"
 tags = "Linq,文字列"
 
 
-["Listの中身を文字列に変換(String.Join)"]
+[[snippets]]
+title = "Listの中身を文字列に変換(String.Join)"
 icon = "unknown"
 description = """
 """
@@ -16,7 +17,8 @@ code = """
 String.Join(", ", _{文字列配列・リスト}_);
 """
 
-["降順に並び替え（ソート）(Linq)"]
+[[snippets]]
+title = "降順に並び替え（ソート）(Linq)"
 icon = "unknown"
 description = """
 OrderBy : 	昇順にソート
@@ -33,7 +35,8 @@ var articles = db.Articles
 """
 
 
-["辞書のForeach(Linq)"]
+[[snippets]]
+title = "辞書のForeach(Linq)"
 icon = "unknown"
 description = """
 DictionaryにForEachは定義されてないが、ToList()でKeyValuePairのリストに変換できる。
@@ -42,7 +45,8 @@ code = """
 dic.ToList().ForEach(kvp => Console.WriteLine($"{kvp.Key}, {kvp.Value}"));
 """
 
-["辞書の初期化"]
+[[snippets]]
+title = "辞書の初期化"
 icon = "unknown"
 description = """
 引用元　C#のDictionaryとは？定義方法と基本的な使い方【初心者向け】 | Modis株式会社

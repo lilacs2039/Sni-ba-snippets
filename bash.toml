@@ -1,0 +1,27 @@
+# snippets for bash
+
+[[tagGroup]]
+name = "操作"
+tags = "移動,コピー,開く,作成,変更,削除"
+description = ""
+
+[[tagGroup]]
+name = "ファイル"
+tags = "ファイル,フォルダ,ルート,カレント,ディレクトリ,書,読"
+description = ""
+
+[[tagGroup]]
+name = "その他"
+tags = "待つ,検索,文字,変数,サブルーチン,コメント"
+description = ""
+
+[[snippets]]
+title = "nohupによるコマンドのバックグラウンド実行"
+icon = "code"
+description = """
+「コマンド」の出力はnohup.outにリダイレクトして、&以降のコマンドを並列実行する。
+"""
+code = """
+nohup コマンド &
+"""
+

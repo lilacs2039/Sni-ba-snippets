@@ -1,4 +1,4 @@
-﻿# snippets for bat
+# snippets for bat
 
 [[tagGroup]]
 name = "構文"
@@ -152,6 +152,17 @@ for (let s of _{配列:str.split("\r\n")}_) {
 }
 """
 
+[[snippets]]
+title = "貼り付け時に実行する関数を指定"
+description = """
+
+"""
+url = ""
+code = """
+<textarea @paste="onPaste"></textarea>
+
+"""
+thumbnail = ""
 
 
 

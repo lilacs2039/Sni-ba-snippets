@@ -1,0 +1,19 @@
+# snippets for rust
+
+[[tagGroup]]
+name = "操作"
+tags = "新規"
+
+[[tagGroup]]
+name = "その他"
+tags = "cargo,プロジェクト"
+
+
+[[snippets]]
+title = "新規プロジェクトを作成"
+description = """
+hello_world : プロジェクト名
+"""
+code = """
+cargo new hello_world
+"""

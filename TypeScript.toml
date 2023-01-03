@@ -187,7 +187,7 @@ thumbnail = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAs8AAAHECAYAAADGXcfpA
 
 [[snippets]]
 title = "Vue3のプロジェクト作成・実行"
-description = """"""
+description = ""
 url = ""
 code = """
 npm init vue@latest

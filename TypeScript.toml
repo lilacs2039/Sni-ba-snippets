@@ -196,3 +196,14 @@ npm run dev
 """
 thumbnail = ""
 
+[[snippets]]
+title = "blob2objectURL"
+description = """
+
+"""
+url = "https://developer.mozilla.org/ja/docs/Web/API/URL/createObjectURL"
+code = """
+let url = URL.createObjectURL(blob);
+
+"""
+thumbnail = ""

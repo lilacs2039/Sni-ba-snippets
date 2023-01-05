@@ -40,5 +40,15 @@ set DEL_FILE=_{削除するファイル名}_
 if exist %DEL_FILE% ( del %DEL_FILE% )
 """
 
-
-
+[[snippets]]
+title = "フォルダを再帰的にコピー"
+description = """
+/e : 再帰的にコピーするオプション
+./dist : コピー元
+../docs : コピー先
+"""
+url = ""
+code = """
+robocopy /e ./dist ../docs
+"""
+thumbnail = ""

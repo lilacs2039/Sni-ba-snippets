@@ -32,7 +32,7 @@ cargo new --lib hello-wasm
 # build
 wasm-pack build --target web
 # publish npm
-npm publish pkg
+npm publish ./pkg
 
 """
 thumbnail = ""

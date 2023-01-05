@@ -207,3 +207,24 @@ let url = URL.createObjectURL(blob);
 
 """
 thumbnail = ""
+
+[[snippets]]
+title = "動的リソースのURL[vue3]"
+description = """
+viteコンパイラはsrcフォルダ内の静的URLの相対参照をよしなに解決してくれるが、動的参照は自分で解決する必要がある。
+
+https://ja.vitejs.dev/guide/assets.html
+
+"""
+url = ""
+code = """
+<script setup>
+function iconUrl(relativePath:string){
+  return new URL(relativePath, window.location.href).href
+}
+</script>
+<template>
+<img :src="iconUrl('img/icon.png')" />
+</template>
+"""
+thumbnail = ""

@@ -17,3 +17,22 @@ hello_world : プロジェクト名
 code = """
 cargo new hello_world
 """
+
+[[snippets]]
+title = "rustライブラリをWebAssemblyにコンパイルしてnpmに発行する"
+description = """
+https://developer.mozilla.org/ja/docs/WebAssembly/Rust_to_wasm
+"""
+url = ""
+code = """
+# install
+cargo install wasm-pack
+# create
+cargo new --lib hello-wasm
+# build
+wasm-pack build --target web
+# publish npm
+npm publish pkg
+
+"""
+thumbnail = ""

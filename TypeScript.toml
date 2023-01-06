@@ -228,3 +228,15 @@ function iconUrl(relativePath:string){
 </template>
 """
 thumbnail = ""
+
+[[snippets]]
+title = "３項演算子でnullの場合分け代入"
+description = """
+nullでなければ処理、nullなら別の値。
+blob : nullableな変数
+"""
+url = ""
+code = """
+imageDataOriginal.value = blob ? await BlobToImageData(blob) : null;
+"""
+thumbnail = ""

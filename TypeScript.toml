@@ -240,3 +240,12 @@ code = """
 imageDataOriginal.value = blob ? await BlobToImageData(blob) : null;
 """
 thumbnail = ""
+
+[[snippets]]
+title = "SFC+setupにおけるemitの定義"
+code = """
+const emit = defineEmits(['onChanged'])
+function _emit(b64: string) {
+  emit("onChanged", b64);
+}
+"""

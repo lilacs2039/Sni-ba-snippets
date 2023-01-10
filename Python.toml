@@ -1,4 +1,4 @@
-﻿# snippets for python
+# snippets for python
 
 [[tagGroup]]
 name = "操作"
@@ -36,3 +36,6 @@ code = "df.assign(key_name='value')"
 title = "集約して、カラムごとに異なる集約をする[pandas]"
 code = "df.groupby('name').agg({'A':[np.sum, np.mean], 'B':[np.sum, np.min]})"
 
+[[snippets]]
+title = "指定した関数で集計し、指定したカラム名で追加したDFを返す"
+code = """df.agg([('最小値','min'),('最大値', 'max')])"""

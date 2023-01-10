@@ -32,4 +32,7 @@ icon = "unknown"
 description = ""
 code = "df.assign(key_name='value')"
 
+[[snippets]]
+title = "集約して、カラムごとに異なる集約をする[pandas]"
+code = "df.groupby('name').agg({'A':[np.sum, np.mean], 'B':[np.sum, np.min]})"
 

@@ -39,3 +39,7 @@ code = "df.groupby('name').agg({'A':[np.sum, np.mean], 'B':[np.sum, np.min]})"
 [[snippets]]
 title = "指定した関数で集計し、指定したカラム名で追加したDFを返す"
 code = """df.agg([('最小値','min'),('最大値', 'max')])"""
+
+[[snippets]]
+title = "ローカルwebサーバを立ち上げ"
+code = """python -m http.server 8000"""

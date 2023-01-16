@@ -1,20 +1,26 @@
 # snippets for bash
 
 [[tagGroup]]
-name = "操作"
-tags = "移動,コピー,開く,作成,変更,削除"
+name = "Docker"
+tags = "Docker,イメージ,コンテナ,一覧"
 description = ""
 
-[[tagGroup]]
-name = "ファイル"
-tags = "ファイル,フォルダ,ルート,カレント,ディレクトリ,書,読"
-description = ""
+# [[tagGroup]]
+# name = "操作"
+# tags = "移動,コピー,開く,作成,変更,削除"
+# description = ""
+
+# [[tagGroup]]
+# name = "ファイル"
+# tags = "ファイル,フォルダ,ルート,カレント,ディレクトリ,書,読"
+# description = ""
 
 [[tagGroup]]
 name = "その他"
-tags = "待つ,検索,文字,変数,サブルーチン,コメント"
+tags = "一覧,待つ,検索,文字,変数,サブルーチン,コメント"
 description = ""
 
+# ----------------------------------------------------------------
 [[snippets]]
 title = "nohupによるコマンドのバックグラウンド実行"
 icon = "code"
@@ -24,4 +30,24 @@ description = """
 code = """
 nohup コマンド &
 """
+
+[[snippets]]
+title = "イメージ一覧を表示[docker]"
+code = """docker image ls"""
+
+[[snippets]]
+title = "コンテナ一覧を表示[docker]"
+code = """docker ps -a"""
+
+[[snippets]]
+title = "コンテナ全削除[docker]"
+code = """docker rm $(docker ps -a -q)"""
+
+[[snippets]]
+title = "イメージ全削除[docker]"
+code = """docker rmi $(docker images -q)"""
+
+
+
+
 

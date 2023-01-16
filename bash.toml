@@ -47,7 +47,9 @@ code = """docker rm $(docker ps -a -q)"""
 title = "イメージ全削除[docker]"
 code = """docker rmi $(docker images -q)"""
 
-
+[[snippets]]
+title = "コンテナ全停止[docker]"
+code = """docker stop $(docker ps -q)"""
 
 
 

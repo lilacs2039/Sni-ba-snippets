@@ -52,3 +52,8 @@ code = """
 robocopy /e ./dist ../docs
 """
 thumbnail = ""
+
+[[snippets]]
+title = "出力結果から表示内容を絞り込み[PowerShell]"
+description = "findコマンドは、検索ワードを"で囲むこと"
+code = """pip list | find "onnx""""

@@ -37,18 +37,19 @@ fetch(_{url}_)
         _{文字列処理}_
     });
 """
-
 [[snippets]]
 title = "tomlファイルを解析"
-icon = "unknown"
 description = """
-tomlファイルを解析
-
-事前準備　`import toml from "toml";`
+tomlファイルを解析 
+事前準備
+`npm install toml`
 """
 code = """
+import toml from "toml";
+
 try {
-    toml.parse(_{TOML文字列}_);
+    const dict = toml.parse(_{TOML文字列}_);
+
 } catch (e) { console.error(`Parse error on ${tomlPath}. ${e}`); }
 """
 

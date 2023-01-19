@@ -20,7 +20,7 @@ description = ""
 
 [[tagGroup]]
 name = "その他"
-tags = "ファイル,フォルダ,書,読,待つ,検索"
+tags = "ファイル,フォルダ,書,読,待つ,検索,TOML"
 # color="#ccc"
 
 

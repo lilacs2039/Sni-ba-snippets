@@ -43,3 +43,8 @@ code = """df.agg([('最小値','min'),('最大値', 'max')])"""
 [[snippets]]
 title = "ローカルwebサーバを立ち上げ"
 code = """python -m http.server 8000"""
+
+[[snippets]]
+title = "変数の存在チェック"
+description = "例）appという名前の変数が存在するか確認"
+code = """if 'app' in locals(): True"""

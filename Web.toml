@@ -1,8 +1,8 @@
-﻿# snippets for html/css
+# snippets for html/css
 
 [[tagGroup]]
 name = "カテゴリ"
-tags = "html,css,javascript,typescript,vue"
+tags = "html,css,javascript,typescript,vue,XPath"
 
 [[tagGroup]]
 name = "操作"
@@ -39,6 +39,16 @@ code = """
 <a class="_{クラス名}_" :href="`?lang=${_{JS/TSコード}_}`">_{表示文字列}_</a>
 """
 
+[[snippets]]
+title = "idやclassで指定するXPath"
+url = "http://aoproj.web.fc2.com/xpath/XPath_cheatsheets_v2.pdf"
+code = """
+# classで指定
+//div[@class="hoge"] 
+
+# idで指定
+//*[@id=”hoge”]
+"""
 
 
 

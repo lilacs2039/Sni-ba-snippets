@@ -41,15 +41,21 @@ code = """docker ps -a"""
 
 [[snippets]]
 title = "コンテナ全削除[docker]"
-code = """docker rm $(docker ps -a -q)"""
+description = "stopしたコンテナしか削除できないので、まずコンテナを停止させてから、削除する。"
+code = """
+# コンテナ全停止
+sudo docker stop $(sudo docker ps -q)
+# コンテナ全削除
+sudo docker rm $(sudo docker ps -a -q)
+"""
 
 [[snippets]]
 title = "イメージ全削除[docker]"
-code = """docker rmi $(docker images -q)"""
+code = """sudo docker rmi $(sudo docker images -q)"""
 
 [[snippets]]
 title = "コンテナ全停止[docker]"
-code = """docker stop $(docker ps -q)"""
+code = """sudo docker stop $(sudo docker ps -q)"""
 
 
 

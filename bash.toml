@@ -59,6 +59,12 @@ code = """sudo docker stop $(sudo docker ps -q)"""
 
 [[snippets]]
 title = "コンテナIDを指定して停止・削除[docker]"
+description = """
+コンテナIDの確認
+```
+sudo docker ps -a
+```
+"""
 code = """TMP=containerId && sudo docker stop $TMP && sudo docker rm $TMP"""
 
 

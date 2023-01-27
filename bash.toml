@@ -57,5 +57,8 @@ code = """sudo docker rmi $(sudo docker images -q)"""
 title = "コンテナ全停止[docker]"
 code = """sudo docker stop $(sudo docker ps -q)"""
 
+[[snippets]]
+title = "コンテナIDを指定して停止・削除[docker]"
+code = """TMP=containerId && sudo docker stop $TMP && sudo docker rm $TMP"""
 
 

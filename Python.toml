@@ -48,3 +48,71 @@ code = """python -m http.server 8000"""
 title = "変数の存在チェック"
 description = "例）appという名前の変数が存在するか確認"
 code = """if 'app' in locals(): True"""
+
+# -------------------------- Pandas document ------------------------------------
+
+[[snippets]]
+title = "pandas.read_pickle#"
+description = """Load pickled pandas object (or any object) from file.Notesread_pickle is only guaranteed to be backwards compatible to pandas 0.20.3
+provided the object was serialized with to_pickle.Examples"""
+url = "https://pandas.pydata.org/docs/reference/api/pandas.read_pickle.html"
+code = """>>> original_df = pd.DataFrame(
+...     {"foo": range(5), "bar": range(5, 10)}
+...    )  
+>>> original_df  
+   foo  bar
+0    0    5
+1    1    6
+2    2    7
+3    3    8
+4    4    9
+>>> pd.to_pickle(original_df, "./dummy.pkl")  
+
+>>> unpickled_df = pd.read_pickle("./dummy.pkl")  
+>>> unpickled_df  
+   foo  bar
+0    0    5
+1    1    6
+2    2    7
+3    3    8
+4    4    9"""
+
+[[snippets]]
+title = "pandas.DataFrame.to_pickle#"
+description = """Pickle (serialize) object to file.Examples"""
+url = "https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.to_pickle.html"
+code = """>>> original_df = pd.DataFrame({"foo": range(5), "bar": range(5, 10)})  
+>>> original_df  
+   foo  bar
+0    0    5
+1    1    6
+2    2    7
+3    3    8
+4    4    9
+>>> original_df.to_pickle("./dummy.pkl")  
+
+>>> unpickled_df = pd.read_pickle("./dummy.pkl")  
+>>> unpickled_df  
+   foo  bar
+0    0    5
+1    1    6
+2    2    7
+3    3    8
+4    4    9"""
+
+[[snippets]]
+title = "pandas.read_table#"
+description = """Read general delimited file into DataFrame.Also supports optionally iterating or breaking of the file
+into chunks.Additional help can be found in the online docs for
+IO Tools.Examples"""
+url = "https://pandas.pydata.org/docs/reference/api/pandas.read_table.html"
+code = """>>> pd.read_table('data.csv')  """
+
+[[snippets]]
+title = "pandas.read_csv#"
+description = """Read a comma-separated values (csv) file into DataFrame.Also supports optionally iterating or breaking of the file
+into chunks.Additional help can be found in the online docs for
+IO Tools.Examples"""
+url = "https://pandas.pydata.org/docs/reference/api/pandas.read_csv.html"
+code = """>>> pd.read_csv('data.csv')  """
+

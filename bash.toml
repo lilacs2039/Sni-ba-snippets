@@ -67,4 +67,11 @@ sudo docker ps -a
 """
 code = """TMP=containerId && sudo docker stop $TMP && sudo docker rm $TMP"""
 
+[[snippets]]
+title = "イメージからコンテナ作成・起動・終了時に削除"
+description = """
+パラメータ
+　ubuntu:22.04　：　イメージ名
+"""
+code = """sudo docker run -it --rm ubuntu:22.04 bash"""
 

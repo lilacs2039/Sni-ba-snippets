@@ -75,3 +75,17 @@ description = """
 """
 code = """sudo docker run -it --rm ubuntu:22.04 bash"""
 
+[[snippets]]
+title = "composeのコンテナ削除"
+description = """
+-s : コンテナを停止してから削除
+jupyter : 入りたいコンテナのサービス名
+"""
+code = """docker compose rm -s jupyter"""
+
+[[snippets]]
+title = "composeのコンテナに入る"
+description = "jupyter：入りたいコンテナのサービス名 bash : 起動したいアプリ"
+url = "https://docs.docker.jp/compose/reference/exec.html"
+code = """docker compose exec jupyter bash"""
+

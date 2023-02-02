@@ -81,6 +81,7 @@ description = """
 -s : コンテナを停止してから削除
 jupyter : 入りたいコンテナのサービス名
 """
+url = "https://docs.docker.jp/compose/reference/rm.html"
 code = """docker compose rm -s jupyter"""
 
 [[snippets]]

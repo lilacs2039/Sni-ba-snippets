@@ -90,3 +90,13 @@ description = "jupyter：入りたいコンテナのサービス名 bash : 起�
 url = "https://docs.docker.jp/compose/reference/exec.html"
 code = """docker compose exec jupyter bash"""
 
+[[snippets]]
+title = "ポートを占有しているプロセスを調べて削除"
+description = """
+パラメータ :80　調べたいポート
+2385　PID（プロセスID）
+"""
+code = """
+sudo lsof -i :80
+kill 2385
+"""

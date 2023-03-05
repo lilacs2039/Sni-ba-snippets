@@ -1,5 +1,8 @@
-﻿# snippets for C#
+# snippets for C#
 
+[[tagGroup]]
+name = "文法"
+tags = "文字列"
 [[tagGroup]]
 name = "操作"
 tags = "移動,コピー,開く,作成,変更,削除,ソート"
@@ -61,4 +64,8 @@ var mydic2 = new Dictionary<string, string>(){
 };
 """
 
+[[snippets]]
+title = "文字列補完式"
+description = "Pythonのf string相当"
+code = """$"Hello {name}""""
 

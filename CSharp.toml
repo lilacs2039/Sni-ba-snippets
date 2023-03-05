@@ -2,7 +2,7 @@
 
 [[tagGroup]]
 name = "文法"
-tags = "文字列"
+tags = "文字列,isinstanceof"
 [[tagGroup]]
 name = "操作"
 tags = "移動,コピー,開く,作成,変更,削除,ソート"
@@ -69,3 +69,7 @@ title = "文字列補完式"
 description = "Pythonのf string相当"
 code = """$"Hello {name}""""
 
+[[snippets]]
+title = "インスタンスのクラスを判定"
+description = "javaのisinstanceof相当"
+code = """obj is Type"""

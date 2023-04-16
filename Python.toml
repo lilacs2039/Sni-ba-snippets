@@ -5,7 +5,7 @@ name = "操作"
 tags = "移動,コピー,開く,作成,変更,削除,ソート"
 [[tagGroup]]
 name = "その他"
-tags = "debug,pandas"
+tags = "debug,pandas,jupyter"
 
 [[snippets]]
 title = "実行中一時停止してデバッガーを起動"
@@ -116,3 +116,15 @@ IO Tools.Examples"""
 url = "https://pandas.pydata.org/docs/reference/api/pandas.read_csv.html"
 code = """>>> pd.read_csv('data.csv')  """
 
+[[snippets]]
+title = "[Jupyter]pyファイルの自動再読み込みなど"
+description = """
+%matplotlib inline : グラフをノートブック内に表示
+%reload_ext autoreload : 自動リロード機能を有効化。モジュールの変更を自動的に反映させる。
+%autoreload 2 : 自動リロード機能のモード設定。（2 : 変更されたすべてのモジュールを毎回リロード）
+"""
+code = """
+%matplotlib inline
+%reload_ext autoreload
+%autoreload 2
+"""

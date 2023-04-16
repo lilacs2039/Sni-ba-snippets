@@ -5,7 +5,7 @@ name = "操作"
 tags = "移動,コピー,開く,作成,変更,削除,ソート"
 [[tagGroup]]
 name = "その他"
-tags = "debug,pandas,jupyter"
+tags = "debug,pandas,jupyter,server"
 
 [[snippets]]
 title = "実行中一時停止してデバッガーを起動"
